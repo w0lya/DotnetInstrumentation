@@ -46,7 +46,8 @@ On the home page of the app, click top navigation links: Home, About, Contact. A
 The rest of ideas can be found in the  [Monitoring app] readme.
 
 ## Additional Concerns
-Concurrency: the Middleware should be safe as it doesn't have shared mutable state in it.
-The Monitoring app uses sockets, and sockets queue up
+**Concurrency**: the Middleware should be safe as it doesn't have shared mutable state in it. The Monitoring app uses sockets, and data gets queued up safely. High load may be a concern because of connection limits though.
+**Encoding**: the responses in Middleware are UTF8-ed, so should be fine.
+
 
  
