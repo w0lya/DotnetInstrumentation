@@ -13,7 +13,7 @@ before_build:
   - cmd: dotnet --version
   # Display minimal restore text
   - cmd: dotnet restore ./Instrumentation.Middleware/Instrumentation.Middleware.csproj --verbosity m
-    - cmd: dotnet restore ./Instrumentation.Website/Instrumentation.Website.csproj --verbosity m
+  - cmd: dotnet restore ./Instrumentation.Website/Instrumentation.Website.csproj --verbosity m
 build_script:
   # output will be in ./src/bin/debug/netcoreapp1.1/publish
   - cmd: dotnet publish ./Instrumentation.Website/Instrumentation.Website.csproj
