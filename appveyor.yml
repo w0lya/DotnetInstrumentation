@@ -29,7 +29,7 @@ test_script:
   # restore packages for our unit tests
   - cmd: dotnet restore ./Instrumentation.Middleware.Tests/Instrumentation.Middleware.Tests.csproj --verbosity m
   # run the unit tests (requires changing into the test directory)
-  - cmd: cd Instrumentation.Middleware.Tests
+  - cmd: cd ./Instrumentation.Middleware.Tests
   - cmd: dotnet xunit
 on_finish :
   # any cleanup in here
