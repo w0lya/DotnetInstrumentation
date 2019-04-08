@@ -17,7 +17,7 @@ before_build:
 build_script:
   # output will be in ./src/bin/debug/netcoreapp1.1/publish
   - cmd: dotnet publish ./Instrumentation.Website/Instrumentation.Website.csproj
-  - cmd: dotnet publish ./Instrumentation.Middleware/IInstrumentation.Middleware.csproj
+  - cmd: dotnet publish ./Instrumentation.Middleware/Instrumentation.Middleware.csproj
 after_build:
   # For once the build has completed
 artifacts:
