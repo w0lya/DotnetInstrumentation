@@ -60,6 +60,8 @@ namespace Instrumentation.Middleware
             catch (Exception ex)
             {
                 await _next(context);
+
+                // TODO: logging.
             }
         }
 
